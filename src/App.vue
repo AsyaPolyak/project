@@ -4,17 +4,20 @@
   <div id="#app">
   <MyComponents/>
   <!--<my-components />-->
+  <MyLike/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import MyComponents from './components/MyComponents.vue';
+import MyLike from './components/MyLike.vue';
 export default {
   name: 'App',
   components: {
     //HelloWorld
-    MyComponents
+    MyComponents,
+    MyLike
   }
 }
 </script>
