@@ -5,6 +5,7 @@
   <MyComponents/>
   <!--<my-components />-->
   <MyLike/>
+  <MyPost/>
   </div>
 </template>
 
@@ -12,12 +13,14 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import MyComponents from './components/MyComponents.vue';
 import MyLike from './components/MyLike.vue';
+import MyPost from './components/MyPost.vue';
 export default {
   name: 'App',
   components: {
     //HelloWorld
     MyComponents,
-    MyLike
+    MyLike,
+    MyPost
   }
 }
 </script>
