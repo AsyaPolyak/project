@@ -4,16 +4,22 @@
     <div class="app">
             <form @submit.prevent>
                 <h1>Створити пост</h1>
-                <input
+                <!-- 
                   v-bind:value="title"
-                  @input="title = $event.target.value" 
+                  @input="title = $event.target.value"  
+                -->
+                <input
+                  v-model="title"
                   class="input"
                   type="text"
                   placeholder="post"
                 >
-                <input
+                <!-- 
                   v-bind:value="body"
                   @input="body = $event.target.value" 
+                -->
+                <input
+                  v-model="body"
                   class="input"
                   type="text"
                   placeholder="post"
@@ -53,6 +59,8 @@ export default {
                 body:this.body
             }
             this.posts.push(newPost);
+            //this.$emit('create', this.post);
+            //this.post = {this.title = '',this.body = ''}
             this.title = '',
             this.body = ''
         },
