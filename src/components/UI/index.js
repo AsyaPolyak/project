@@ -1,4 +1,4 @@
-import MyButton from "@components/UI/MyButton";
+import MyButton from "@/components/UI/MyButton";
 
 export default {
     MyButton

@@ -1,5 +1,6 @@
 <!-- eslint-disable vue/require-v-for-key -->
 <!--import {createApp} from 'vue';-->
+
 <template>
     <div class="app">
             <form @submit.prevent>
@@ -24,22 +25,23 @@
                   type="text"
                   placeholder="post"
                 >
-                <button
-                  class="btn"
+                <my-button 
                   @click="createPost">
-                  Створити
-                </button>
+                    Створити
+                </my-button>
             </form>
         
         <div class="post" v-for="post in posts">
             <div><strong>Назва:</strong>{{post.title}}</div>
             <div><strong>Опис:</strong>{{post.body}}</div>
-            <button> </button>
+            <my-button>Видалити</my-button>
         </div>
     </div>
 </template>
 <script>
+import MyButton from './UI/MyButton.vue'
 export default {
+
     data () {
         return {
             posts: [
@@ -64,8 +66,9 @@ export default {
             this.title = '',
             this.body = ''
         },
-
-
+    },
+    components: {
+        MyButton
     }
 }
 </script>
