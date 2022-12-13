@@ -1,5 +1,5 @@
 import MyButton from "@/components/UI/MyButton";
 
-export default {
+export default [
     MyButton
-}
+]

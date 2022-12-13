@@ -34,12 +34,12 @@
         <div class="post" v-for="post in posts">
             <div><strong>Назва:</strong>{{post.title}}</div>
             <div><strong>Опис:</strong>{{post.body}}</div>
-            <my-button>Видалити</my-button>
+            <my-button >Видалити</my-button>
         </div>
     </div>
 </template>
 <script>
-import MyButton from './UI/MyButton.vue'
+//import MyButton from './UI/MyButton.vue'
 export default {
 
     data () {
@@ -66,10 +66,10 @@ export default {
             this.title = '',
             this.body = ''
         },
-    },
+    }/*,
     components: {
         MyButton
-    }
+    }*/
 }
 </script>
 <style scoped>
